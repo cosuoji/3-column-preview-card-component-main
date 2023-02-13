@@ -3,3 +3,136 @@ font-family: 'Big Shoulders Display', cursive;
 font-family: 'Lexend Deca', sans-serif;
 
 */
+
+body{
+
+    background-color: hsl(0, 0%, 95%);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    height: 90%;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.button{
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    border: 1px solid white;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 15px;
+    font-weight: 400;
+}
+
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    color: white;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    padding-right: 40%;
+    line-height: 30px;
+  
+}
+
+.button:hover{
+    border: 1px solid white;
+    color: white;
+}
+
+.yellow{
+background-color: hsl(31, 77%, 52%);
+border-radius: 10px 10px 0 0;
+}
+
+.yellow .button{
+    color: hsl(31, 77%, 52%);
+}
+
+.yellow .button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+
+}
+
+.green{
+ background-color: hsl(184, 100%, 22%);
+}
+
+.green .button{
+    color: hsl(184, 100%, 22%);
+}
+
+.green .button:hover{
+    color: white;
+    background-color: hsl(184, 100%, 22%);
+}
+
+
+.darkgreen{
+   background-color: hsl(179, 100%, 13%);
+   border-radius: 0 0 10px 10px;
+}
+
+
+.darkgreen .button{
+    color: hsl(179, 100%, 13%);
+}
+
+.darkgreen .button:hover{
+    color:white;
+    background-color: hsl(179, 100%, 13%);
+    
+}
+
+.info{
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  padding: 40px;
+  width: 250px;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-flow: row;
+        align-items: center;
+
+    }
+
+
+    .info{
+        display: flex;
+        height: 400px;
+        padding: 40px;
+        width: 250px;
+      }
+      
+      .darkgreen{
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 10px 10px 0px;
+     } 
+
+     .yellow{
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 10px 0 0 10px;
+        }
+
+    p{
+        padding: 0;
+    }
+}
